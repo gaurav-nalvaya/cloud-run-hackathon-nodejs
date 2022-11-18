@@ -11,7 +11,6 @@ app.get('/', function (req, res) {
 app.post('/', function (req, res) {
   console.log('log of request start');
   console.log(req.body);
-
   console.log('log of request end');
   const moves = ['F', 'T', 'L', 'R'];
   
