@@ -21,7 +21,7 @@ app.post('/', function (req, res) {
      console.log(req.body.arena.dims.state);
     
     
-  }catch(){
+  }catch(ex){
   }
   console.log('log of request end');
   const moves = ['F', 'T', 'L', 'R'];
