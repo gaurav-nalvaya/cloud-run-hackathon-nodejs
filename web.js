@@ -11,6 +11,18 @@ app.get('/', function (req, res) {
 app.post('/', function (req, res) {
   console.log('log of request start');
   console.log(req.body);
+  try{
+     console.log('log of request arena');
+  console.log(req.body.arena);
+    
+      console.log('log of request dims');
+     console.log(req.body.arena.dims);
+      console.log('log of request state');
+     console.log(req.body.arena.dims.state);
+    
+    
+  }catch(){
+  }
   console.log('log of request end');
   const moves = ['F', 'T', 'L', 'R'];
   
