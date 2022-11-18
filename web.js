@@ -11,10 +11,10 @@ app.get('/', function (req, res) {
 app.post('/', function (req, res) {
   console.log(req.body);
   const moves = ['F', 'T', 'L', 'R'];
-   moves = ['F'];
+  
   // TODO add your implementation here to replace the random response
-  //res.send(moves[Math.floor(Math.random() * moves.length)]);
-  res.send(moves['F']);
+  res.send(moves[Math.floor(Math.random() * moves.length)]);
+  //res.send(moves['F']);
 });
 
 app.listen(process.env.PORT || 8080);
