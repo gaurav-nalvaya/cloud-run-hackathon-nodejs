@@ -9,6 +9,7 @@ app.get('/', function (req, res) {
 });
 
 app.post('/', function (req, res) {
+  //code to check request
   console.log('log of request start');
   console.log(req.body);
   console.log('log of request end');
